@@ -285,7 +285,7 @@ const prods = [
     },
 ];
 
-const havePhoto = prods.filter((prod) => { if (prod.photos.length > 0) return true });
+const havePhoto = prods.filter((prod) => prod.photos.length > 0);
 console.log(havePhoto);
 
 const rangeProducts = prods.sort((prev, next) => prev.price - next.price);
